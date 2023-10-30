@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Create an Account</title>
+    <link href="./css/style.css" rel="stylesheet" />
+    <script type="module" src="./js/RequiredValidator.js" defer></script>
+    <script type="module" src="./js/app.js" defer></script>
+  </head>
+  <body>
+    <div class="bg-image"></div>
+    <div class="container">
+      <div class="form-container">
+        <h1>Create an Account</h1>
+        <form id="signup">
+          <div class="form-item">
+            <div class="field-item" id="firstname-item">
+              <label for="firstName">First Name</label>
+              <input id="firstName" type="text" />
+              <span class="error-message"></span>
+              <svg
+                class="icon icon-success hidden"
+                xmlns="https://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <title>check-circle</title>
+                <g fill="none">
+                  <path
+                    d="M9 12l2 2 4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </g>
+              </svg>
+              <svg
+                class="icon hidden icon-error"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <title>exclamation-circle</title>
+                <g fill="none">
+                  <path
+                    d="M12 8v4m0 4h.01M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="field-item">
+              <label for="lastName">Last Name</label>
+              <input id="lastName" type="text" />
+              <span class="error-message"></span>
+              <svg
+                class="icon icon-success hidden"
+                xmlns="https://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <title>check-circle</title>
+                <g fill="none">
+                  <path
+                    d="M9 12l2 2 4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </g>
+              </svg>
+              <svg
+                class="icon hidden icon-error"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <title>exclamation-circle</title>
+                <g fill="none">
+                  <path
+                    d="M12 8v4m0 4h.01M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+          </div>
+          <div class="form-item">
+            <div class="field-item">
+              <label for="email">Email</label>
+              <input id="email" type="email" />
+              <span class="error-message"></span>
+              <svg
+                class="icon icon-success hidden"
+                xmlns="https://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <title>check-circle</title>
+                <g fill="none">
+                  <path
+                    d="M9 12l2 2 4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </g>
+              </svg>
+              <svg
+                class="icon hidden icon-error"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <title>exclamation-circle</title>
+                <g fill="none">
+                  <path
+                    d="M12 8v4m0 4h.01M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+          </div>
+          <div class="form-item">
+            <div class="field-item">
+              <label for="password">Password</label>
+              <input id="password" type="password" />
+              <span class="error-message"></span>
+              <svg
+                class="icon icon-success hidden"
+                xmlns="https://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <title>check-circle</title>
+                <g fill="none">
+                  <path
+                    d="M9 12l2 2 4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </g>
+              </svg>
+              <svg
+                class="icon hidden icon-error"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <title>exclamation-circle</title>
+                <g fill="none">
+                  <path
+                    d="M12 8v4m0 4h.01M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="field-item">
+              <label for="passwordConfirm">Confirm Password</label>
+              <input id="passwordConfirm" type="password" />
+              <span class="error-message"></span>
+              <svg
+                class="icon icon-success hidden"
+                xmlns="https://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <title>check-circle</title>
+                <g fill="none">
+                  <path
+                    d="M9 12l2 2 4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </g>
+              </svg>
+              <svg
+                class="icon hidden icon-error"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <title>exclamation-circle</title>
+                <g fill="none">
+                  <path
+                    d="M12 8v4m0 4h.01M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+          </div>
+
+          <div class="form-item">
+            <div class="field-item">
+              <fieldset id="gender">
+                <legend>Gender</legend>
+
+                <input id="female" name="female" type="radio" />
+                <label for="female">Female</label>
+
+                <input id="male" name="male" type="radio" />
+                <label for="male">Male</label>
+
+                <input id="other" name="other" type="radio" />
+                <label for="other">Other</label>
+              </fieldset>
+              <svg
+                class="icon icon-success hidden"
+                xmlns="https://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <title>check-circle</title>
+                <g fill="none">
+                  <path
+                    d="M9 12l2 2 4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </g>
+              </svg>
+              <svg
+                class="icon hidden icon-error"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <title>exclamation-circle</title>
+                <g fill="none">
+                  <path
+                    d="M12 8v4m0 4h.01M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+          </div>
+          <div class="form-item">
+            <div class="field-item">
+              <fieldset>
+                <legend>Hobby</legend>
+                <input
+                  id="football"
+                  name="football"
+                  type="checkbox"
+                  value="Bike"
+                />
+                <label for="football">Football</label><br />
+                <input
+                  id="basketball"
+                  name="basketball"
+                  type="checkbox"
+                  value="basketball"
+                />
+                <label for="basketball">Basketball</label><br />
+                <input
+                  id="martialArts"
+                  name="martialArts"
+                  type="checkbox"
+                  value="martialArts"
+                />
+                <label for="martialArts">Martial arts</label><br />
+              </fieldset>
+              <svg
+                class="icon icon-success hidden"
+                xmlns="https://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <title>check-circle</title>
+                <g fill="none">
+                  <path
+                    d="M9 12l2 2 4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </g>
+              </svg>
+              <svg
+                class="icon hidden icon-error"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <title>exclamation-circle</title>
+                <g fill="none">
+                  <path
+                    d="M12 8v4m0 4h.01M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+          </div>
+
+          <div class="form-item">
+            <div class="field-item">
+              <label for="income">Source of income</label>
+              <select id="income" name="income">
+                <option value="employed">Employed</option>
+                <option value="unemployed">Unemployed</option>
+              </select>
+              <svg
+                class="icon icon-success hidden"
+                xmlns="https://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <title>check-circle</title>
+                <g fill="none">
+                  <path
+                    d="M9 12l2 2 4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </g>
+              </svg>
+              <svg
+                class="icon hidden icon-error"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <title>exclamation-circle</title>
+                <g fill="none">
+                  <path
+                    d="M12 8v4m0 4h.01M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="field-item">
+              <label for="incomeAmount">Annual income: </label>
+              <input
+                id="annualIncome"
+                class="valid"
+                type="range"
+                value="22"
+                min="11"
+                max="100"
+                oninput="this.nextElementSibling.value = this.value"
+              />
+
+              <output>22</output>
+              <span class="error-message"></span>
+              <span>K</span>
+
+              <svg
+                class="icon icon-success hidden"
+                xmlns="https://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <title>check-circle</title>
+                <g fill="none">
+                  <path
+                    d="M9 12l2 2 4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </g>
+              </svg>
+              <svg
+                class="icon hidden icon-error"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <title>exclamation-circle</title>
+                <g fill="none">
+                  <path
+                    d="M12 8v4m0 4h.01M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+          </div>
+          <div class="form-item">
+            <div class="field-item">
+              <label for="profilePicture">Upload Profile Picture:</label>
+              <input id="profilePicture" name="profilePicture" type="file" />
+
+              <svg
+                class="icon icon-success hidden"
+                xmlns="https://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <title>check-circle</title>
+                <g fill="none">
+                  <path
+                    d="M9 12l2 2 4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </g>
+              </svg>
+              <svg
+                class="icon hidden icon-error"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <title>exclamation-circle</title>
+                <g fill="none">
+                  <path
+                    d="M12 8v4m0 4h.01M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+          </div>
+
+          <div class="form-item">
+            <div class="field-item">
+              <label for="age">Age </label>
+              <input id="age" name="age" type="date" />
+              <span class="error-message"></span>
+              <svg
+                class="icon icon-success hidden"
+                xmlns="https://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <title>check-circle</title>
+                <g fill="none">
+                  <path
+                    d="M9 12l2 2 4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </g>
+              </svg>
+              <svg
+                class="icon hidden icon-error"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <title>exclamation-circle</title>
+                <g fill="none">
+                  <path
+                    d="M12 8v4m0 4h.01M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+          </div>
+
+          <div class="form-item">
+            <div class="field-item">
+              <label for="about">Tell us about yourself</label>
+              <textarea cols="30" id="about" name="about" rows="10"></textarea>
+              <span class="error-message"></span>
+              <svg
+                class="icon icon-success hidden"
+                xmlns="https://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <title>check-circle</title>
+                <g fill="none">
+                  <path
+                    d="M9 12l2 2 4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </g>
+              </svg>
+              <svg
+                class="icon hidden icon-error"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <title>exclamation-circle</title>
+                <g fill="none">
+                  <path
+                    d="M12 8v4m0 4h.01M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+          </div>
+          <div class="btn-container">
+            <button id="submit-btn">Submit</button>
+            <button id="facebook-btn">Register With Facebook</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

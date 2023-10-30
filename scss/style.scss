@@ -1,0 +1,151 @@
+$bckrg: rgba(228, 217, 217, 0.826);
+@import "./media";
+@import "./mixins";
+
+html {
+  height: 100%;
+  margin: 0;
+  font-family: "Bricolage Grotesque", sans-serif;
+}
+
+body {
+  margin: 0;
+  background-image: url(https://images.unsplash.com/photo-1517154421773-0529f29ea451?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+  font-size: 0.7em;
+
+  display: flex;
+
+  .form-container {
+    margin: auto;
+    text-align: center;
+    color: black;
+    padding-bottom: 20px;
+
+    form {
+      display: flex;
+      flex-direction: column;
+
+      .form-item {
+        display: flex;
+        margin: 5px 0;
+        background: $bckrg;
+        border-radius: 5px;
+        padding: 10px;
+        width: 40vw;
+
+        @include mobile {
+          flex-direction: column;
+          align-items: flex-end;
+        }
+
+        .field-item {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          width: 100%;
+          padding: 5px;
+          font-weight: bold;
+          position: relative;
+          margin: auto;
+
+          @include mobile {
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+          }
+
+          .error-message {
+            font-size: 8px;
+            width: 80px;
+
+            color: red;
+            display: flex;
+            align-self: flex-end;
+          }
+        }
+
+        .icon {
+          justify-self: flex-end;
+        }
+
+        .hidden {
+          display: none;
+        }
+
+        .icon.icon-success {
+          stroke: teal;
+        }
+
+        .icon.icon-error {
+          stroke: red;
+        }
+
+        &:only-child {
+          display: flex;
+          justify-content: center;
+          width: 100%;
+        }
+      }
+
+      fieldset {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+      }
+
+      .btn-container {
+        display: flex;
+        justify-content: center;
+
+        @include mobile {
+          flex-direction: column;
+        }
+
+        #submit-btn,
+        #facebook-btn {
+          font-family: "Bricolage Grotesque", sans-serif;
+          border-radius: 3px;
+          padding: 20px 50px;
+          border: none;
+          cursor: pointer;
+          margin: 10px;
+        }
+
+        #facebook-btn {
+          background-color: #5b5ba4;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+.valid {
+  border-bottom: 1px solid green;
+}
+
+.invalid {
+  border-bottom: 1px solid red;
+}
+
+.input-error:focus {
+  border-bottom: 1px solid red;
+}
+
+form input,
+textarea,
+form input:active,
+input:focus {
+  outline: none;
+  border: none;
+  background: none;
+  border-bottom: 1px solid aliceblue;
+
+  width: 40%;
+}

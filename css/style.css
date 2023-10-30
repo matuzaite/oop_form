@@ -1,0 +1,133 @@
+html {
+  height: 100%;
+  margin: 0;
+  font-family: "Bricolage Grotesque", sans-serif;
+}
+
+body {
+  margin: 0;
+  background-image: url(https://images.unsplash.com/photo-1517154421773-0529f29ea451?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+  font-size: 0.7em;
+  display: flex;
+}
+.container .form-container {
+  margin: auto;
+  text-align: center;
+  color: black;
+  padding-bottom: 20px;
+}
+.container .form-container form {
+  display: flex;
+  flex-direction: column;
+}
+.container .form-container form .form-item {
+  display: flex;
+  margin: 5px 0;
+  background: rgba(228, 217, 217, 0.826);
+  border-radius: 5px;
+  padding: 10px;
+  width: 40vw;
+}
+@media (max-width: 600px) {
+  .container .form-container form .form-item {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+.container .form-container form .form-item .field-item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 5px;
+  font-weight: bold;
+  position: relative;
+  margin: auto;
+}
+@media (max-width: 600px) {
+  .container .form-container form .form-item .field-item {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+.container .form-container form .form-item .field-item .error-message {
+  font-size: 8px;
+  width: 80px;
+  color: red;
+  display: flex;
+  align-self: flex-end;
+}
+.container .form-container form .form-item .icon {
+  justify-self: flex-end;
+}
+.container .form-container form .form-item .hidden {
+  display: none;
+}
+.container .form-container form .form-item .icon.icon-success {
+  stroke: teal;
+}
+.container .form-container form .form-item .icon.icon-error {
+  stroke: red;
+}
+.container .form-container form .form-item:only-child {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.container .form-container form fieldset {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+.container .form-container form .btn-container {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 600px) {
+  .container .form-container form .btn-container {
+    flex-direction: column;
+  }
+}
+.container .form-container form .btn-container #submit-btn,
+.container .form-container form .btn-container #facebook-btn {
+  font-family: "Bricolage Grotesque", sans-serif;
+  border-radius: 3px;
+  padding: 20px 50px;
+  border: none;
+  cursor: pointer;
+  margin: 10px;
+}
+.container .form-container form .btn-container #facebook-btn {
+  background-color: #5b5ba4;
+  color: white;
+}
+
+.valid {
+  border-bottom: 1px solid green;
+}
+
+.invalid {
+  border-bottom: 1px solid red;
+}
+
+.input-error:focus {
+  border-bottom: 1px solid red;
+}
+
+form input,
+textarea,
+form input:active,
+input:focus {
+  outline: none;
+  border: none;
+  background: none;
+  border-bottom: 1px solid aliceblue;
+  width: 40%;
+}
